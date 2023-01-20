@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  border-radius: 10px;
+  background: #1F2937;
+  padding: 100px 60px;
+  margin: 15px;
+}
+
+.title {
+  color: #fff;
+  font-family: 'Karla', sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+}
+
+.random {
+  color: #4ADF86;
+}
+
+.description {
+  color: #D5D4D8;
+  margin-top: -10px;
+  font-family: 'Sofia Sans', sans-serif;
+}
+
+.btn {
+  background-color: #4ADF86;
+  max-width: 191px;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  font-family: 'Karla', sans-serif;
+  border: none;
+  margin-top: 30px;
+}
+
+/* Password */
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 2em;
+}
+
+.password-field {
+  background-color: #273549;
+  color: #55f991;
+  border-radius: .25em;
+  text-align: center;
+  padding: 1em;
+  flex-grow: 1;
+}
+
+hr {
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+}
+
