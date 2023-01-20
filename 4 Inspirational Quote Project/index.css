@@ -1,3 +1,36 @@
 body {
-    margin: 0;
+  margin: 0;
+  background-image: url(./images/nature.jpg);
+  background-size: cover;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.quote-section {
+  background: #fff;
+  max-width: 436px;
+  padding: 30px 50px;
+}
+
+.quote {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.author {
+  font-weight: 600;
+  font-size: 18px;
+  text-align: right;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
 }

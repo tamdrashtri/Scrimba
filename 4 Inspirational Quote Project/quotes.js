@@ -19,4 +19,16 @@ const quotes = [
         quote: "Someone once told me to never dream. I said NEVER SAY NEVER",
         author: "Justin Bieber"
     }
-]
+];
+
+let quoteEl = document.querySelector(".quote")
+let authorEl = document.querySelector(".author")
+
+
+function getRandomQuote() {
+  let RandomQuoteIndex = Math.floor(Math.random() * quotes.length);
+  quoteEl.textContent = quotes[RandomQuoteIndex].quote;
+  authorEl.textContent = quotes[RandomQuoteIndex].author;
+}
+
+getRandomQuote()
