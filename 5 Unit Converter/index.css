@@ -1,0 +1,110 @@
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0;
+}
+
+/* set up the body */
+body {
+    line-height: 1.5;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+/* make images easier to work with */
+img,
+picutre {
+    max-width: 100%;
+    display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+.container {
+  padding-inline: 2em;
+  margin-inline: auto;
+  max-width: 80rem;
+}
+
+.upper-container {
+  background: #6943FF;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.title {
+  color: #fff;
+}
+
+.number {
+  font-size: 58px;
+  color: #fff;
+  border: 2px solid #B295FF;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+.convert-btn {
+  color: #3D3D3D;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500px;
+}
+
+.content-container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 50px;
+  background: #F4F4F4;
+}
+
+.box {
+  background: #FFFFFF;
+  border-radius: 3px;
+  min-width: 500px;
+  text-align: center;
+  padding: 30px 20px;
+  color: #5A537B;
+}
+
