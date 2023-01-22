@@ -75,11 +75,16 @@ select {
 }
 
 .number {
-  font-size: 58px;
+  background-color: transparent;
   color: #fff;
+  height: 80px;
+  width: 120px;
   border: 2px solid #B295FF;
-  padding: 5px 20px;
+  padding: 35px 0px;
   border-radius: 5px;
+  text-align: center;
+  font-size: 58px;
+  font-weight: 800;
 }
 
 .convert-btn {
@@ -106,5 +111,10 @@ select {
   text-align: center;
   padding: 30px 20px;
   color: #5A537B;
+}
+
+.text {
+  color: #353535;
+
 }
 

@@ -6,26 +6,25 @@
       <div class="container">
         <section class="upper-container flex">
           <h1 class="title">Metric/Imperial Unit Conversion</h1>
-          <h2 class="number">20</h2>
+          <input id="input-el" class="number" type="number">
           <button class="convert-btn">Convert</button>
-          <script src="index.js"></script>
         </section>
         <section class="content-container flex">
           <div class="box">
             <h2 class="unit-title">Length (Meter/Feet)</h2>
-            <p class="converter"></p>
+            <p id="length-result" class="text" ></p>
           </div>
           <div class="box">
             <h2 class="unit-title">Volume (Liters/Gallons)          </h2>
-            <p class="converter"></p>
+            <p class="volume-converter text"></p>
           </div>
           <div class="box">
             <h2 class="unit-title">Mass (Kilograms/Pounds)</h2>
-            <p class="converter"></p>
+            <p class="mass-converter text"></p>
           </div>
         </section>
 
       </div>
-      
+      <script src="index.js"></script>
     </body>
 </html>
