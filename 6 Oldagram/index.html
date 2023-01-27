@@ -1,9 +1,61 @@
 <html>
     <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
         <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <img src="images/logo.png">
-        <script src="index.js"></script>
-    </body>
+      <main>
+
+      
+      <header>
+        <div class="container flex">
+          <img class="logo" src="images/logo.png">
+          <img class="avatar" src="images/avatar-courbet.jpg" alt="" srcset="">
+
+        </div>
+      </header>
+
+      <section class="post">
+        <div class="container">
+          <div class="user-info flex">
+            <div class="user-image">
+              <img id="avatar" class="avatar" src="images/avatar-courbet.jpg" alt="">
+            </div>
+            <div class="feed">
+              <p id="name" class="bold"></p>
+              <p id="location" class="normal">Vancouver, BC</p>
+          </div>
+            
+          </div>
+          <img id="post" src="images/post-courbet.jpg" alt="" class="post-pic">
+          
+      </div>
+      </section>
+
+      <section class="actions">
+        <div class="container">
+          <div class="icon">
+            <img id="addLikes" src="images/icon-heart.png" alt="" srcset="">
+            <img src="images/icon-dm.png" alt="" srcset="">
+            <img src="images/icon-comment.png" alt="" srcset="">
+          </div>
+          
+          <div class="likes">
+            <p id="likes" class="bold">21,492 likes</p>
+          </div>
+          
+        </div>
+      </section>
+
+      <section class="comments">
+        <div class="container">
+          <p id="username" class="commenter bold"></p><p id="comment"></p>
+        </div>
+      </section>
+    </main>
+      <script src="index.js"></script>
+    </body>   
 </html>

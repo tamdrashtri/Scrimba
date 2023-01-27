@@ -28,3 +28,26 @@ const posts = [
     }
 ]
 
+const nameEl = document.getElementById('name')
+const usernameEl = document.getElementById('username')
+const locationEl = document.getElementById('location')
+const avatarEl = document.getElementById('avatar')
+const postEl = document.getElementById('post')
+const commentEl = document.getElementById('comment')
+const likesEl = document.getElementById('likes')
+const addLikesEl = document.getElementById('addLikes')
+
+let randomIndex = Math.floor(Math.random() * 3)
+
+function renderRandom() {
+  let postIndex = posts[randomIndex]
+  nameEl.textContent = postIndex.name
+  usernameEl.textContent = postIndex.username
+  locationEl.textContent = postIndex.location
+  avatarEl.src = postIndex.avatar
+  postEl.src = postIndex.post
+  commentEl.textContent = postIndex.comment
+  likesEl.textContent = `${postIndex.likes} likes`
+} 
+
+renderRandom()
