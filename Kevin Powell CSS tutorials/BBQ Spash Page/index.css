@@ -1,0 +1,116 @@
+/* Reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* typography */
+
+:root {
+  --ff-primary: 'Source Sans Pro', sans-serif;
+
+  --fw-bold: 900;
+  --fw-regular: 400;
+
+  --fs-h1: 2.25rem;
+  --fs-h2: 1.3125rem;
+  --fs-small: 0.625rem;
+  --fs-body: 1rem;
+
+  --clr-orange: #F18119;
+  --clr-dark: #404040;
+  --clr-light: #fff;
+
+}
+
+@media (min-width: 800px) {
+  :root {
+    --fs-h1: 3.5rem;
+    --fs-h2: 1.75rem;
+    --fs-small: 0.625rem;
+    --fs-body: 1.125rem;
+  }
+}
+/* general styles */
+
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: 2.5rem;
+}
+
+h1 {
+  font-size: var(--fs-h1)
+}
+
+.intro p {
+  color: var(--clr-orange);
+  text-transform: uppercase;
+  font-weight: var(--fw-bold);
+}
+
+.top-text {
+  font-size: var(--fs-small);
+  order: -1;
+}
