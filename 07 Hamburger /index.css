@@ -1,0 +1,162 @@
+body {
+  font-family: 'Smythe', cursive;
+  font-size: 1rem;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  width: 600px;
+} 
+
+
+ 
+
+header {
+  height: 150px;
+  background-image: url(./images/intro-background.jpg);
+  background-repeat: no-repeat;
+  object-fit: cover; 
+  margin-bottom: 1em;
+
+}
+
+header h1 {
+  margin: 0;
+  font-weight: 400;
+}
+
+header p {
+  margin-top: .5em;
+}
+
+.intro {
+  color: #fff;
+  padding-left: 3em;
+  padding-top: 2.75em;
+}
+
+/* menu */
+
+
+/* modal */
+
+.modal {
+  width: 300px;
+  height: 310px;
+  border: 1px solid black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: auto;
+}
+
+.modal-header {
+  text-align: center;
+}
+
+button {
+  background-color: #16DB99;
+  border: none;
+  border-radius: 3.8px;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 90%;
+  margin: 0 auto 1.25em auto;
+  padding: 10px 15px;
+}
+
+.menu-items-container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  border-bottom: 1px solid #D2D2D2;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.emoji {
+  font-size: 4em;
+  margin: 0;
+}
+
+.items {
+  margin-left: 1em;
+}
+
+.item-pic {
+  width: 70px;
+}
+
+.item-name {
+  font-size: 1.5rem;
+  margin-top: 0.7em;
+  margin-bottom: 0;
+}
+
+.ingredients {
+  margin: 0;
+  color: #8B8B8B;
+}
+
+.modal {
+  display: none;
+}
+
+i {
+  border: 1px solid #DEDEDE;
+  border-radius: 50%;
+  padding: .75em;
+  margin-right: 1em;
+  cursor: pointer;
+}
+
+i:hover,
+i:focus {
+  background-color: #000;
+  color: #fff;
+}
+
+/* order total */
+
+.order-total {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.order-total h2 {
+  text-align: center;
+  margin: 2em 0;
+}
+
+
+.total-price {
+  margin-top: 0;
+  border-top: 1px solid #000;
+}
+
+.order-list,
+.total-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub-items {
+  display: inline-block;
+}

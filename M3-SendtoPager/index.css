@@ -1,0 +1,182 @@
+/* Reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* typography */
+
+:root {
+  --ff-primary: 'Press Start 2P', cursive;
+
+  --fs-normal: 1rem;
+  --fs-large: 1.15rem;
+
+  --clr-dark: #444444;
+  --clr-gray: #D9D9D9;
+  --clr-red: #BE482A;
+  --clr-green: #3D9C7C;
+  --clr-light: #F8F8F8;
+  --clr-green-light: #9EC4B3;
+
+}
+
+/* general styles */
+
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-normal);
+  line-height: 2.5rem;
+  text-align: center;
+}
+
+.pager {
+  background-color: var(--clr-dark);
+  padding-top: 1px;
+  margin-top: 1rem;
+}
+
+.container {
+  margin: 10px auto;
+  max-width: 794px;
+  width: 55%;
+}
+
+.title {
+  color: var(--clr-light);
+  margin: 7px 0;
+}
+
+input {
+  padding: 12px 0;
+  margin-bottom: 10px;
+  text-align: center;
+  border: none;
+  width: 95%;
+  font-size: var(--fs-large);
+}
+
+.pager-input {
+  background-color: var(--clr-green-light);
+}
+
+/* numpad */
+
+.numpad {
+  margin-top: 2.5rem;
+  background-color: var(--clr-gray);
+  padding: 10px 0;
+}
+
+.numpad .title  {
+  color: var(--clr-dark);
+}
+
+.numpad input {
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+}
+
+.nums {
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+  padding: 0 0.6rem;
+  gap: 0.5rem;
+
+}
+
+.num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	flex: 1 0 30.3333%;
+  text-decoration: none;
+  color: var(--clr-dark);
+  background-color: var(--clr-light);
+  
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  width: 95%;
+  padding: 10px 0;
+  margin: 5px auto;
+  border: 1px solid var(--clr-dark);
+  color: var(--clr-light);
+  cursor: pointer;
+}
+
+.clr-red {
+  background-color: var(--clr-red);
+  margin-top: 0.5rem;
+}
+
+.submit {
+  background-color: var(--clr-green);
+  color: var(--clr-dark);
+  margin-bottom: 0;
+
+}
