@@ -41,7 +41,7 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
-Make images easier to work with
+/* Make images easier to work with */
 img,
 picture,
 svg {
@@ -63,7 +63,7 @@ svg {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-} */
+}
 
 /* typography */
 
@@ -88,24 +88,27 @@ svg {
 
 body {
   font-family:var(--ff-primary);
-  
   color: var(--clr-light);
+  font-weight: var(--fw-regular);
 }
 
 h1 {
   font-weight: var(--fw-bold);
   font-size: var(--fs-h1);
+  text-align: center;
 }
 
 img {
   width: 175px;
   text-align: center;
+  margin-inline: auto;
 }
 
 .subtitle {
   font-weight: var(--fw-bold);
   font-size: var(--fs-body);
   text-align: center;
+  margin-top: 1rem;
 }
 
 .container {
@@ -113,17 +116,36 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 90%;
-
+  max-width: 500px;
   background-color: var(--clr-dark);
-  
+  margin: 0 auto;
+}
+
+.salesboard {
+  width: 85%;
 }
 
 .salesboard-header {
-  margin: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
+.total-section {
 
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  gap: 5px;
+}
+
+.total-section-subtitle {
+  width: 50%;
+  
+}
+
+.total-section .input {
+  width: 100%;
+}
 
 .btns {
   margin-top: 0 auto;
@@ -131,21 +153,44 @@ img {
   
 }
 
+
+
 button {
   padding: 0.5rem 2rem;
+  background-color: var(--clr-accent);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 
 }
 
-.subtitle {
-  margin-top: 1rem;
+
+.display .input {
+  width: 100%;
 }
 
-
-input {
+.input {
   background-color: var(--clr-accent-dark);
   border: none;
   border-radius: 2.5rem;
-  max-width: 850px;
-  padding: 0.5rem 2rem;
+  padding: 1.2rem 3rem;
+  color: #fff;
+  text-align: center;
+}
 
+/* achievements */
+
+.achievements {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.achivements-texts {
+  width: 85%;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;  
+  padding-top: 1rem;
 }
