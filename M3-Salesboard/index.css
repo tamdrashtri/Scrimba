@@ -162,6 +162,13 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  color: var(--clr-light);
+
+}
+
+.reset {
+  font-weight: var(--fw-bold);
+  margin-top: 1.5rem;
 
 }
 
@@ -174,8 +181,14 @@ button {
   background-color: var(--clr-accent-dark);
   border: none;
   border-radius: 2.5rem;
-  padding: 1.2rem 3rem;
+  padding: 0.5rem 1rem;
   color: #fff;
+  font-size: 1rem;
+}
+
+.total-section .input {
+  font-size: var(--fs-body);
+  font-weight: var(--fw-bold);
   text-align: center;
 }
 
@@ -195,3 +208,4 @@ li {
   list-style: none;  
   padding-top: 1rem;
 }
+
