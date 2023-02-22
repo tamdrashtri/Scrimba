@@ -90,6 +90,7 @@ body {
   font-family:var(--ff-primary);
   color: var(--clr-light);
   font-weight: var(--fw-regular);
+  font-size: var(--fs-body);
 }
 
 h1 {
