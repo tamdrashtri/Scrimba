@@ -82,6 +82,6 @@ resetBtn.addEventListener('click', function() {
   totalCommission = 0
   salesInput.textContent = ''
   achiInput.textContent = ''
-  revenueInput.textContent = ''
-  commissionInput.textContent = ''
+  revenueInput.textContent = '$'
+  commissionInput.textContent = '$'
 })
