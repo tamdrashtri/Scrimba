@@ -6,5 +6,8 @@ M4 -  🏦 BestBank: https://scrimba.com/scrim/cocf84a259acc922196ded766
 M5 - 🧾 Invoice Creator: https://scrimba.com/scrim/coffa4aeba9a29f65b0d45dd0 
 M6 - 🌲 HikeFinder Website: https://scrimba.com/scrim/cBR2mvuW 
 M7 -  🔍 Employee Directory:  https://scrimba.com/scrim/co0584e3281af731b3075f9b0
+M9 -
+      📺 YouTube Channel Search: https://scrimba.com/scrim/cmZ7mMAd
+      🤖 Texterly AI: https://scrimba.com/scrim/cVM68rhM 
 
 https://different-marmoset-f7b.notion.site/Solo-Projects-Code-Reviews-60e29d0d91204813944075a2db549833
