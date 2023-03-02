@@ -22,14 +22,15 @@
         <div class="container">
           <div class="user-info flex">
             <div class="user-image">
-              <img class="avatar" src="images/avatar-courbet.jpg" alt="">
+              <img id="avatar" class="avatar" src="images/avatar-courbet.jpg" alt="">
             </div>
             <div class="feed">
-              <p class="bold">Gustave Courbet</p>
-              <p class="normal">Vancouver, BC</p>
+              <p id="name" class="bold"></p>
+              <p id="location" class="normal">Vancouver, BC</p>
           </div>
+            
           </div>
-          <img src="images/post-courbet.jpg" alt="" class="post-pic">
+          <img id="post" src="images/post-courbet.jpg" alt="" class="post-pic">
           
       </div>
       </section>
@@ -37,13 +38,13 @@
       <section class="actions">
         <div class="container">
           <div class="icon">
-            <img src="images/icon-heart.png" alt="" srcset="">
+            <img id="addLikes" src="images/icon-heart.png" alt="" srcset="">
             <img src="images/icon-dm.png" alt="" srcset="">
-            <img src="images/icon-comment.png" alt="" srcset="">
+            <img src="images/icon-comment.png" alt="" srcset="" >
           </div>
           
           <div class="likes">
-            <p class="bold">21,492 likes</p>
+            <p id="likes" class="bold">21,492 likes</p>
           </div>
           
         </div>
@@ -51,11 +52,10 @@
 
       <section class="comments">
         <div class="container">
-          <p><span class="commenter bold">gus1819</span> i'm feelin a bit stressed</p>
+          <p id="username" class="commenter bold"></p><p id="comment"></p>
         </div>
       </section>
     </main>
       <script src="index.js"></script>
-    </body>
-    
+    </body>   
 </html>

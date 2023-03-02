@@ -53,15 +53,12 @@ select {
   gap: var(--gap, 1rem);
 }
 
-.grid {
-  display: grid;
-  gap: var(--gap, 1rem);
-}
 
 .container {
   /* margin-inline: auto; */
   width: 90%;
   margin: 0 auto;
+  max-width: 445px;
   
 }
 
@@ -104,6 +101,11 @@ header .container {
   
 }
 
+.icon:hover img {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
 .icon img {
   margin-right: 7px;
 }
@@ -117,4 +119,8 @@ header .container {
 .comments p {
   display: inline-block;
   padding-right: 5px;
+}
+
+.liked {
+  outline: 1px dotted red;
 }
