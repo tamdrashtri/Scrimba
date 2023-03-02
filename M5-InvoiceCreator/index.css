@@ -139,7 +139,7 @@ header {
 
 input[type="text"] {
   background-color: var(--clr-white);
-  color: var(--clr-white);
+  color: var(--clr-gray);
   border-radius: 7px 0px 0px 7px;
   border: none;
   padding: 0.5em 1em;
@@ -152,13 +152,14 @@ input[type="text"] {
     border: none;
 }
 
-input[type="submit"] {
+.addTask {
   background-color: var(--clr-accent);
   color: var(--clr-white);
   border-radius: 0px 7px 7px 0px;
   border: none;
   padding: 0.5em 1em;
   width: 10%;
+  font-size: 1rem;
 }
 
 /* task list section */

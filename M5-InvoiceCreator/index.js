@@ -1,60 +1,67 @@
-import accounts from './data.js';
 
+let total = 0
+let taskArray = []
+const taskInput = document.querySelector('.task-input')
+const taskList = document.querySelector('.task-list')
+let totalAmount = document.querySelector('.total')
+const sendBtn = document.querySelector('.send')
 
-// when click on any account, get the id of the specific account
-document.addEventListener('click', (e) => {
-  if (e.target.dataset.id) {
-    displaySpendings(e.target.dataset.id)
-  }
-})
+// when input is submit, add the content to .task-list
+// receive the selected value from the select element, then add it to .task-price
+document.querySelector('.addTask').addEventListener('click', function() {
+  const selectedValue = Number(document.querySelector('.selection').value);
 
-// const getPercents = (balance, spent) => (spent / balance) * 100
+  if (taskInput.value) {
+    function task(name, price) {
+      this.name = name;
+      this.price = price;
+    }
+    const newTask = new task(taskInput.value, selectedValue);
 
-// display spending on the Spending section
-// if account section is clicked, then show the spending of that account
-function displaySpendings(accountId) {
-  const targetAccount = accounts[accountId-1]
-  const isClickedEl = document.querySelector(`.clicked-${targetAccount.id}`)
-  const spendingBlocksEl = document.querySelector('.spending-blocks')
+    taskArray.push(newTask);
+
+    // clear input value
+    taskInput.value = ''
+
+    renderTasks();
+    displayTotal()
+  }})
+
+  // when remove button is clicked, delete the content of that id from the array
+  document.addEventListener('click', (e) => {
+    if (e.target.classList.contains('remove')) {
+      const index = e.target.dataset.item
+      taskArray.splice(index, 1)
+      renderTasks();
+      displayTotal()
+    }
+  })
   
-  if (isClickedEl) {
-    isClickedEl.classList.toggle('is-clicked')
-  } 
+  // render tasks
+  function renderTasks() {
+    taskList.innerHTML = taskArray.map(item => {
+      return `
+          <div class="task-list-block">
+          <div class="task-list-block--left-side">
+            <p class="task-header">${item.name}</p>
+            <button class="remove" data-item=${taskArray.indexOf(item)}>Remove</button>
+          </div>
+          <p class="task-price"><span class="gray-dollar">$</span>${item.price}</p>
+          </div>
+        `
+    }).join('')
+  }
 
-  spendingBlocksEl.innerHTML = targetAccount.spendings.map(item => {
-    // const percent = getPercents(targetAccount.balance, item.spent) style="width: ${percent}%
-    return `
-      <div class="spending-block">
-        <p class="spending-text">${item.category}</p>
-        <p class="spending-amount"">$ ${item.spent}</p>
-      </div>
-    `
-  }).join('')
-}
+  function displayTotal() {
+    totalAmount.textContent = '$' + taskArray.reduce((acc, item) => {
+      return acc + item.price
+    }, 0)
+  }
 
-// display amount on the Account section
-// for each of the id in this array, display the title and the balance
-// Renders all the accounts from the imported accounts object.
-// It iterates over the array and creates elements which contain the
-// title of the account and its balance and also provides data attributes
-// such as data-id to refer to from the element.
-function renderAccounts() {
-  const accountBlocksEl = document.querySelector('.account-blocks');
+  // when SEND button is clicked, reset the tasks and inputs 
+  sendBtn.addEventListener('click', () => {
+    taskArray = []
+    renderTasks();
+    displayTotal()
+  })
 
-  accountBlocksEl.innerHTML = accounts.map(account => {
-    return `
-      <div class="account-block clicked-${account.id}" data-id="${account.id}">
-        <p class="account-text">${account.title}</p>
-        <p class="account-amount">$ ${account.balance}</p>
-      </div>
-    `;
-  }).join('');
-}
-
-
-// Render entries in the DOM such as accounts, their balances and and respective spendings
-function render() {
-  renderAccounts();
-}
-
-render()

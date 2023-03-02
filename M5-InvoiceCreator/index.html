@@ -19,13 +19,13 @@
     </header>
     <main class="main-section">
       <div class="input-section">
-        <input type="text" id="name" placeholder="Enter task">
+        <input class="task-input" type="text" id="name" placeholder="Enter task">
         <select class="selection" name="tasks" id="tasks">
           <option value="10">$10</option>
           <option value="20">$20</option>
           <option value="30">$30</option>
         </select>
-        <input type="submit" value="+">
+        <button class="addTask">+</button>
       </div>
       <div class="main-container">
         <div class="task-list-section">
@@ -35,14 +35,6 @@
           </div>
           <div class="task-list">
             <!-- task block here -->
-            <div class="task-list-block">
-              <div class="task-list-block--left-side">
-                <p class="task-header">Tasks</p>
-                <button class="remove">Remove</button>
-              </div>
-              <p class="task-price"><span class="gray-dollar">$</span>10</p>
-            </div>
-            
           </div>
           <hr>
         </div>
@@ -54,7 +46,7 @@
           </div>
           <div class="total-section--subheader">
             <p class="section-subheader subheader">Total Amount</p>
-            <p class="total">$0</p>
+            <p class="total"></p>
           </div>
         </div>
         <button class="send">Send invoice</button>
