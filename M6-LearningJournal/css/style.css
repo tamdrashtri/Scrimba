@@ -1,0 +1,204 @@
+
+/* Learning journal logo text is collapsing when I narrow screen too much. Any way to fix? */
+
+:root {
+  --ff-primary:'Source Sans Pro', sans-serif;
+
+  --fs-small: 0.75rem;
+  --fs-normal: 1rem;
+  --fs-blog-title: 1.75rem;
+  --fs-large: 2rem;
+
+  --fw-normal: 400;
+  --fw-mid: 500;
+  --fw-bold: 700;
+
+  --clr-white: #fff;
+  --clr-dark: #141414;
+  --clr-gray: #918E9B;
+
+}
+
+/* =================
+    Typography
+   ================= */
+
+h1, h2, h3, h4 {
+  font-weight: var(--fw-bold);
+  line-height: 1.2;
+}
+
+.blog-section p {
+  font-weight: var(--fw-normal);
+  line-height: 1.5;
+  color: #505050;
+}
+
+.title {
+  font-size: var(--fs-normal);
+  font-weight: var(--fw-bold);
+  color: var(--clr-dark);
+}
+
+ul li a {
+  color: var(--clr-dark);
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style-type: none;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: var(--fs-large);
+  color: var(--clr-white);
+  margin: 0.3em 0;
+}
+
+h2 {
+  font-size: var(--fs-blog-title);
+}
+
+.hero-section > *,
+footer > * {
+  color: var(--clr-white);
+}
+
+.date {
+  font-size: var(--fs-normal);
+  color: var(--clr-dark);
+}
+
+.inverted {
+  color: var(--clr-white);
+}
+
+/* =================
+    General Styles
+   ================= */
+
+body {
+  font-family: var(--ff-primary);
+
+}
+
+/* =================
+    Nav containers
+   ================= */
+nav {
+  display: grid;
+  grid-template-columns: 1fr minmax(50px, 100px) 1fr;
+  padding: 1em 0.7em;
+  background-color: #fff;
+}
+
+.nav-links {
+  grid-column: 3 / span 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+}
+
+li {
+  display: inline-block;
+  padding-right: 1em;
+  cursor: pointer;
+}
+
+/* =================
+    Hero Section
+   ================= */
+
+.hero-section {
+  background-image: url(../images/blog-image-hero.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  padding: 1em;
+  background-blend-mode: multiply;
+}
+
+.hero-img {
+  object-fit: cover;
+}
+
+.hero-title {
+  width: 80%;
+}
+
+.par {
+  width: 90%;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5em 0 0.3em 0.8em;
+}
+
+.hero-title {
+  margin-top: 0.2em;
+}
+/* =================
+    Blog Section
+   ================= */
+
+.blog-section {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+}
+
+.blog-img {
+  object-fit: cover;
+  width: 100%;
+  display: block;
+  margin: 1.5em 0 0.7em 0;
+}
+
+.blog-card > h2 {
+  margin: 0.2em 0;
+}
+
+
+
+/* =================
+    Footer
+   ================= */
+
+
+.footer-link {
+  color: var(--clr-dark);
+  text-decoration: underline;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5em 0 2em 0;
+}
+
+footer {
+  background-color: var(--clr-dark);
+  padding: 2em 0;
+  text-align: center;
+}
+
+.copyright {
+  font-size: var(--fs-small);
+  color: var(--clr-gray);
+}
+
+/* laptop styles */
+@media screen and (min-width: 658px) {
+  .blog-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5em;
+  }
+}
+  

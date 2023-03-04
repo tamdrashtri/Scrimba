@@ -4,7 +4,7 @@ body {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
-  width: 600px;
+  max-width: 450px;
 } 
 
 
@@ -40,11 +40,15 @@ header p {
 /* modal */
 
 .modal {
-  width: 300px;
-  height: 310px;
-  border: 1px solid black;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: auto;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-header {
@@ -74,7 +78,7 @@ input {
 }
 
 .menu-items-container {
-  max-width: 90%;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -117,6 +121,19 @@ input {
 
 .modal {
   display: none;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 350px;
+  height: 350px;
+  overflow: auto;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 6px 2px #666;
+  font-family: Verdana, sans-serif;
 }
 
 i {
@@ -136,27 +153,75 @@ i:focus {
 /* order total */
 
 .order-total {
-  max-width: 90%;
+  max-width: 100%;
   margin: 0 auto;
+  display: none;
 }
 
 .order-total h2 {
   text-align: center;
-  margin: 2em 0;
+  margin: 1.3em 1em 0 2em;
 }
 
 
 .total-price {
-  margin-top: 0;
+  margin-top: 1em;
   border-top: 1px solid #000;
 }
 
-.order-list,
+.order-list-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
 .total-price {
   display: flex;
   justify-content: space-between;
 }
 
+.item-name {
+  margin-top: 0.4em;
+}
+
+.remove {
+  font-size: 0.7rem;
+  font-weight: var(--fw-normal);
+  background-color: transparent;
+  border: none;
+  color: #BBBBBB;
+  margin-left: 1em;
+  cursor: pointer;
+  align-self: center;
+}
+
 .sub-items {
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+}
+
+.complete-order {
+  background-color: #16DB99;
+  border: none;
+  border-radius: 3.8px;
+  width: 100%;
+  margin: 0 auto;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 0.7em 1em;
+  color: #fff;
+  margin-top: 2em;
+  cursor: pointer;
+  font-family: Verdana, sans-serif;
+}
+
+.order-complete {
+  display: none;
+  background-color: #ECFDF5;
+  color: #065F46;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0.5em 0.5em;
+  margin-top: 1em;
 }

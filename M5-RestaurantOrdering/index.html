@@ -21,9 +21,9 @@
   </header>
 
 
-    <div class="menu-items-container">
-
-    </div>
+    <section class="menu-items-container">
+      <!-- display menuArray -->
+    </section>
 
 
     <section class="ordered-items">
@@ -34,26 +34,29 @@
       <!-- order total -->
       <h2>Your order</h2>
       <div class="order-list">
-        <div class="sub-items">
-          <p class="item-name">Pizza</p> <a class="rm-link" href="">remove</a>
-        </div>
-        <p class="item-price">$14</p>
+        <!-- render ordered list -->
       </div>
       <div class="total-price">
         <p class="item-name">Total price:</p>
-        <p class="total">$14</p>
+        <p class="total"></p>
       </div>
+      <button class="complete-order" type="submit">Complete Order</button>
     </section>
 
     <section class="modal">
       <h2 class="modal-header">Enter card details</h2>
       <form action="">
-        <input type="text" name="" id="" placeholder="Enter your name" required>
-        <input type="number" name="" id="" placeholder="Enter card number" required>
-        <input type="number" name="" id="" placeholder="Enter CVV" required>
-        <button type="submit">Pay</button>
+        <input type="text" name="" id="name" placeholder="Enter your name" required>
+        <input type="number" name="" id="number" placeholder="Enter card number" required>
+        <input type="number" name="" id="cvv" placeholder="Enter CVV" required>
+        <button class="pay-button" type="submit">Pay</button>
       </form>
     </section>
+
+    <section class="order-complete">
+      <p class="order-complete-text">Thank you for your order. Your order will be ready in 20 minutes.</p>
+    </section>
+
     <script src="index.js" type="module"></script>
 </body>
 

@@ -7,9 +7,10 @@ M5 - 🧾 Invoice Creator: https://scrimba.com/scrim/coffa4aeba9a29f65b0d45dd0
 M6 - 🌲 HikeFinder Website: https://scrimba.com/scrim/cBR2mvuW 
    - Learning Journal: https://scrimba.com/learn/frontend/solo-project-learning-journal-cNP6Gwc6
 M7 - 🔍 Employee Directory:  https://scrimba.com/scrim/co0584e3281af731b3075f9b0
-M8 - Tindog https://scrimba.com/learn/frontend/solo-project-tindog-co0e64371a0120af20b5f91e9
+   - Tindog https://scrimba.com/learn/frontend/solo-project-tindog-co0e64371a0120af20b5f91e9
 M9 -
       📺 YouTube Channel Search: https://scrimba.com/scrim/cmZ7mMAd
       🤖 Texterly AI: https://scrimba.com/scrim/cVM68rhM 
+      Movie Watchlist: https://scrimba.com/learn/frontend/solo-project-movie-watchlist-co0a24985872b20458f37bc22
 
 https://different-marmoset-f7b.notion.site/Solo-Projects-Code-Reviews-60e29d0d91204813944075a2db549833
