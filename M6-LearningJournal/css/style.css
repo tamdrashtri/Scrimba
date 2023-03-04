@@ -46,6 +46,7 @@ ul li a {
   text-decoration: none;
   list-style-type: none;
   font-weight: 600;
+  cursor: pointer;
 }
 
 h1 {
@@ -118,13 +119,13 @@ li {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  object-fit: cover;
   padding: 1em;
   background-blend-mode: multiply;
 }
 
 .hero-img {
   object-fit: cover;
+  height: 100%;
 }
 
 .hero-title {
@@ -165,7 +166,49 @@ li {
   margin: 0.2em 0;
 }
 
+.recent {
+  text-align: center;
+}
 
+/* ================
+  About Section
+  ================= */ 
+
+.about-section {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.about-intro {
+  margin: 2.5em 0;
+}
+
+.about-intro > *,
+.view-top-section > * {
+  padding: 0.4em 0;
+}
+
+.about-content {
+  margin-bottom: 3em;
+}
+
+.about-content > * {
+  padding: 0.4em 0;
+}
+
+/* =================
+    View section
+   ================= */
+
+.view-section {
+  width: 90%;
+  margin-inline: auto;
+  margin-top: 2em;
+}
+
+.view-img {
+  margin: 1em 0;
+}
 
 /* =================
     Footer
@@ -186,6 +229,7 @@ footer {
   background-color: var(--clr-dark);
   padding: 2em 0;
   text-align: center;
+  margin-top: 2em;
 }
 
 .copyright {
@@ -200,5 +244,10 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1.5em;
   }
+  .about-section,
+  .view-section {
+    width: 70%;
+  }
+
 }
   
