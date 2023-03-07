@@ -1,0 +1,429 @@
+
+/* Learning journal logo text is collapsing when I narrow screen too much. Any way to fix? */
+
+:root {
+  --ff-primary: 'Inter', sans-serif;
+
+  --fs-small: 0.75rem;
+  --fs-normal: 1rem;
+  --fs-blog-title: 1.75rem;
+  --fs-large: 2rem;
+
+  --fw-normal: 400;
+  --fw-mid: 500;
+  --fw-bold: 700;
+
+  --clr-white: #fff;
+  --clr-dark: #141414;
+  --clr-gray: #918E9B;
+
+}
+
+/* =================
+    Typography
+   ================= */
+
+h1, h2, h3, h4 {
+  font-weight: var(--fw-bold);
+  line-height: 1.2;
+}
+
+.blog-section p {
+  font-weight: var(--fw-normal);
+  line-height: 1.5;
+  color: #505050;
+}
+
+.title {
+  font-size: var(--fs-normal);
+  font-weight: var(--fw-bold);
+  color: var(--clr-dark);
+}
+
+.primary-navigation ul li a {
+  color: var(--clr-dark);
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style-type: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--clr-white);
+  margin: 0.3em 0;
+}
+
+.accent {
+  color: #ECE480;
+}
+
+h2 {
+  font-size: var(--fs-blog-title);
+}
+
+.hero-section > *,
+footer > * {
+  color: var(--clr-white);
+}
+
+
+/* =================
+    General Styles
+   ================= */
+
+body {
+  font-family: var(--ff-primary);
+
+}
+
+/* =================
+    Nav containers
+   ================= */
+header {
+  margin: 0.5em 1em;
+  background-color: var(--clr-white);
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding: 0.5em 1.5em;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.logo a {
+  text-decoration: none;
+  color: var(--clr-dark);
+  font-weight: 700;
+  font-size: var(--fs-large);
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  gap: 0.8em;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a:hover,
+.menu a:focus {
+  color: coral;
+}
+
+
+#sign-up {
+  background-color: #638A5C;
+  padding: 0.5em 1em;
+  color: var(--clr-white);
+}
+
+#log-in {
+  background-color: var(--clr-white);
+  padding: 0.5em 1em;
+  border: #141414 1px solid;
+}
+
+@media (max-width: 768px) {
+
+  .primary-navigation {
+    display: none;
+    position: absolute;
+    inset: 5rem 6rem auto;
+    background: var(--clr-dark);
+    border-radius: 0.5rem;
+    padding: 1em;
+    z-index: 999;
+  }
+
+  .logo a {
+    font-size: 1.5em;
+  }
+
+  .menu {
+    display: grid;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: var(--clr-white);
+    background: none;
+  }
+
+
+  .menu li {
+    list-style: none;
+  }
+  
+
+  .primary-navigation[data-visible] {
+    display: block;
+    position: fixed;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    padding: 0.5em;
+  }
+}
+
+
+/* =================
+    Hero Section
+   ================= */
+
+.hero-section {
+  background-image: linear-gradient(180deg, rgba(35, 35, 35, 0.9) 66.04%, rgba(35, 35, 35, 0) 100%), url(../images/image\ 2.jpg);
+  opacity: 0.8;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  padding: 2.5em 0 0.3em 1.5em;
+  
+}
+
+.search-section {
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+
+}
+
+button {
+  background-color:#638A5C;
+  color:#FFFFFF;
+  border: none;
+}
+
+input {
+  border: none;
+  padding: 0.96em;
+}
+
+.fa-magnifying-glass {
+  color:rgb(0, 0, 0);
+  background-color: #FFFFFF;
+  border-radius: 5px 0 0 5px;
+  padding: 1.03em;
+}
+
+.search-btn {
+  border: 5px solid white;
+  border-radius: 0 5px 5px 0;
+  padding: 0.65em;
+  cursor: pointer;
+}
+
+.hero-title {
+  width: 80%;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3em;
+}
+
+.par {
+  width: 70%;
+}
+
+@media screen and (min-width: 658px) {
+  .hero-section {
+    display: flex;
+    min-height: 400px;
+  }
+  .hero-text {
+    width: 50%;
+    justify-content: center;
+    padding: 0 1.5em;
+  }
+  .search-section {
+    align-items: flex-end;
+    width: 50%;
+  }
+
+}
+
+/* =================
+    Content Section
+   ================= */
+
+.content-section {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+}
+
+.content-title {
+  font-size: 2em;
+  font-weight: var(--fw-bold);
+  margin-top: 1em;
+  color: #565656;
+}
+
+.content-section button {
+  padding: 0.5em 1em;
+  margin-top: 1em;
+  text-transform: uppercase;
+  margin-bottom: 1.5em;
+}
+
+.length {
+  margin-bottom: 1em;
+}
+
+.blog-img {
+  object-fit: cover;
+  width: 100%;
+  display: block;
+  margin: 0 0 0.7em 0;
+}
+
+/* laptop styles */
+@media screen and (min-width: 658px) {
+  .content-section {
+    display: grid;
+    width: 95%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .content-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+  .left {
+    order: -1;
+  }
+  .content-card-info {
+    margin: 3em 0 0 0;
+    padding: 2.5em;
+    width: 50%;
+  }
+}
+
+
+/* ================
+  Resources Section
+  ================= */ 
+
+.resources-section {
+  margin-top: 3em;
+  padding: 2em;
+  text-align: center;
+  background-color: #FAFAFA;
+}
+
+.resources-card {
+  padding: 2em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+}
+
+.resource-img {
+  width: 3rem;
+  margin-bottom: 1em;
+}
+
+.resource-title {
+  color: #000000;
+  font-weight: var(--fw-bold);
+}
+
+.resource-text {
+  padding: 1em 0
+}
+
+/* laptop styles */
+@media screen and (min-width: 658px) {
+  .resources-section {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+  }
+}
+
+/* =================
+    Footer
+   ================= */
+
+footer {
+  background-color: var(--clr-dark);
+  padding: 2em 0;
+  text-align: center;
+  display: flex;
+  align-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.footer-nav ul li {
+  list-style-type: none;
+}
+
+nav ul {
+  gap: 1em;
+  display: flex;
+  list-style-type: none;
+}
+
+.footer-nav ul li a {
+  list-style: none;
+  color: var(--clr-white);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.logo {
+  text-decoration: none;
+  color: var(--clr-white);
+}
+
+.logo-text {
+  display: flex;
+}
+
+.copyright {
+  font-size: var(--fs-small);
+  color: var(--clr-gray);
+}
+
+/* laptop styles */
+@media screen and (min-width: 658px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 2em;
+    padding: 2em;
+  }
+  .copyright {
+    margin-top: 0.5em;
+  }
+}
+  
