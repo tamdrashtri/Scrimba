@@ -4,100 +4,150 @@
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-  <title>My Learning Journal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <title>HikeFinder</title>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoh9G39kfwNLjCYCeLXHMUMKGI0GtF-IE"></script>
 </head>
 
 <body>
   <header>
-    <nav>
+    <div class="nav-wrapper">
       <div class="logo">
-        <img src="./images/image 17.png" alt="" srcset="">
-        <h2 class="title">My learning journal</h2>
+        <img src="./images/Polygon 2.png" alt="" srcset="">
+        <a href="#" class="logo">HikeFinder</a>
       </div>
-      <div class="nav-links">
-        <ul>
+      <button class="mobile-nav-toggle" aria-controls="primary-nav">
+        <img class="nav-icon" src="./images/Vector.png" alt="" srcset="" aria-hidden="true">
+      </button>
+      <span class="visually-hidden">Menu</span>
+      <nav class="primary-navigation">
+        <ul class="menu">
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Me</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a id="sign-up" href="index.html">Sign Up</a></li>
+          <li><a id="log-in" href="about.html">Log in</a></li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
 
+  <section class="hero-section">
 
-  <div class="view-section">
-
-  <div class="view-top-section">
-    <p class="date">JULY 23, 2022</p>
-    <h2 class="view-title">My new journey as a bootcamp student.</h1>
-    <p class="view-content">After several months of learning in the Frontend Developer Career Path, I've made the big jump over
-      to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.</p>
-    <img class="view-img" src="./images/blog-image-hero.png" alt="" srcset="">
-  </div>
-
-
-
-  <div class="about-content">
-    <p><strong>How I stay committed to learning</strong></p>
-
-    <p>I like to think of myself as a lifelong learner. I used to spend hours and hours learning, then try to create
-      simple projects using what I learned or work new techniques into existing projects.</p>
-
-    <p>While that was fun, I felt like it would be helpful to share what I was learning and most things about my journey
-      with the world.</p>
-
-    <p><strong>How I got started</strong></p>
-
-    <p>I started simple and gradually grew my learning journal site. I would take notes about what I was learning. After
-      each learning session, I'd use my notes to not only reflect on what I learned but also write short summaries of
-      what I learned using my own words.</p>
-
-    <p>That helped me grok what I was learning, and I realized that posting my learning summaries was also helping
-      others learn and stay motivated.</p>
-  </div>
-
-
-  </div>
-
-  <p class="recent"><strong>Recent Posts</strong></p>
-  <section class="blog-section">
-
-    <div class="blog-card">
-      <img src="./images/blog-image-01.png" alt="" class="blog-img" />
-      <p class="date">JULY 23, 2022</p>
-      <h2>Blog One</h2>
-      <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in
-        the Frontend Developer Career Path.</p>
+    <div class="hero-text">
+      <h1 class="hero-title">Find Your Next <span class="accent">Adventure</span></h1>
+      <p class="par">Your next hiking adventure awaits. Get on the trail with detailed maps and updates shared by hikers
+        like you.</p>
     </div>
-    <div class="blog-card">
-      <img src="./images/blog-image-02.png" alt="" srcset="" class="blog-img">
-      <p class="date">JULY 23, 2022</p>
-      <h2>Blog Two</h2>
-      <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in
-        the Frontend Developer Career Path.</p>
+
+  </section>
+
+  <p class="trail-title">Explore Curated Trails Near You</p>
+  <section class="trail-section">
+    <div class="left-section">
+
+
+
+      <div class="trail-card">
+        <div>
+          <img class="trail-img" src="./images/image 4.jpg" alt="" srcset="">
+        </div>
+
+        <div class="trail-info">
+          <p class="trail-title">Tryon Creek State Area</p>
+          <p class="review">Moderate 4.5 (428)</p>
+        </div>
+        <p class="trail-content">670-acre forested area along a ravine with well-maintained trails for hikers, horses &
+          leashed dogs.</p>
+      </div>
     </div>
-    <div class="blog-card">
-      <img src="./images/blog-image-03.png" alt="" srcset="" class="blog-img">
 
-      <p class="date">JULY 23, 2022</p>
-      <h2>Blog Three</h2>
-      <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in
-        the Frontend Developer Career Path.</p>
+    <div class="trail-card">
+      <div>
+        <img class="trail-img" src="./images/image 7.jpg" alt="" srcset="">
+      </div>
+      <div class="trail-info">
+        <p class="trail-title">Marquam Nature Park</p>
+        <p class="review">Easy 4.3 (432)</p>
+      </div>
+      <p class="trail-content">193 acres of undeveloped land & over 5 miles of hiking trails with forested scenic views.
+      </p>
+    </div>
+    </div>
 
+    <div class="trail-card">
+
+      <div>
+        <img class="trail-img" src="./images/image 6.jpg" alt="" srcset="">
+      </div>
+
+      <div class="trail-info">
+        <p class="trail-title">Wildwood Trail Area
+        </p>
+        <p class="review">Easy 4.0 (207)</p>
+      </div>
+
+      <p class="trail-content">670-acre forested area along a ravine with well-maintained trails for hikers, horses &
+        leashed dogs.</p>
+    </div>
+    </div>
+    </div>
+    <div class="map right-section">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.274257380938!2d-70.56068388481569!3d41.45496659976631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e52963ac45bbcb%3A0xf05e8d125e82af10!2sDos%20Mas!5e0!3m2!1sen!2sus!4v1671220374408!5m2!1sen!2sus"
+        width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </section>
 
+  <section class="resources-section">
+    <div class="resources-card">
+      <img class="resource-img" src="./images/bell.png" alt="" srcset="">
+      <p class="resource-title">Sign up for Notifications</p>
+      <div class="resource-text">Sign up to get conditions alerts, information on pop-up events and interesting stories.
+      </div>
+    </div>
+    <div class="resources-card">
+      <img class="resource-img" src="./images/location.png" alt="" srcset="">
+      <p class="resource-title">Get the HikeFinder App</p>
+      <div class="resource-text">Download the app to get the most out of every minute outdoors with offline maps and
+        more!</div>
+    </div>
+    <div class="resources-card">
+      <img class="resource-img" src="./images/share.png" alt="" srcset="">
+      <p class="resource-title">Share Trails</p>
+      <div class="resource-text">Share your hiking adventures with the community and keep a record of your travels.
+      </div>
+    </div>
+
+  </section>
 
 
   <footer>
-    <p>My Learning Journal</p>
-    <p class="copyright">Copyright ©2022</p>
+    <nav class="footer-nav">
+      <ul class="footer-nav-lists">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Explore</a></li>
+        <li><a href="index.html">Sign Up</a></li>
+        <li><a href="about.html">Log in</a></li>
+      </ul>
+    </nav>
+    <div class="footer-logo">
+      <div class="logo-text">
+        <img src="./images/Polygon 2.png" alt="" srcset="">
+        <a href="#" class="logo">HikeFinder</a>
+      </div>
+
+      <p class="copyright">Copyright ©2022</p>
+    </div>
+
   </footer>
 
 </body>
+<script type="module" src="index.js"></script>
 
 </html>
