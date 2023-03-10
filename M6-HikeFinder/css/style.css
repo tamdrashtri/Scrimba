@@ -169,12 +169,10 @@ header {
     background: none;
   }
 
-
   .menu li {
     list-style: none;
   }
   
-
   .primary-navigation[data-visible] {
     display: block;
     position: fixed;
@@ -248,32 +246,11 @@ input {
 
 .hero-text {
   align-self: center;
+  padding: 5em 1em;
 }
 
 .par {
   width: 70%;
-}
-
-@media screen and (min-width: 987px) {
-  .hero-section {
-    display: flex;
-    align-items: flex-end;
-    min-height: 400px;
-  }
-  .hero-text {
-    width: 50%;
-    justify-content: center;
-    align-self: center;
-    padding: 0 1.5em;
-  }
-  .search-section {
-    width: 50%;
-    align-items: flex-end;
-    justify-content: flex-end;
-    padding: 0 1.5em;
-    height: 3em;
-  }
-
 }
 
 /* =================
@@ -309,30 +286,6 @@ input {
   margin: 0 0 0.7em 0;
 }
 
-/* laptop styles */
-@media screen and (min-width: 987px) {
-  .content-section {
-    display: grid;
-    width: 95%;
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .content-card {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 1em;
-  }
-  .left {
-    order: -1;
-  }
-  .content-card-info {
-    margin: 3em 0 0 0;
-    padding: 2.5em;
-    width: 50%;
-  }
-}
-
-
 /* ================
   Resources Section
   ================= */ 
@@ -364,15 +317,6 @@ input {
 
 .resource-text {
   padding: 1em 0
-}
-
-/* laptop styles */
-@media screen and (min-width: 987px) {
-  .resources-section {
-    display: flex;
-    flex-direction: row;
-    gap: 2em;
-  }
 }
 
 /* =================
@@ -421,34 +365,30 @@ nav ul {
   color: var(--clr-gray);
 }
 
-/* laptop styles */
-@media screen and (min-width: 987px) {
-  footer {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    gap: 2em;
-    padding: 2em;
-  }
-  .copyright {
-    margin-top: 0.5em;
-  }
-}
-
 /* =================
     Trail section
    ================= */
 
 .trail-section {
-
+  width: 90%;
+  margin: 0 auto;
 }
 
-.trail-card {
-
+.trail-section > * {
+  margin: 1.5em 0;
 }
 
-.trail-img {
-  object-fit: cover;
+.trail-info {
+  margin: 0.5em 0;
+}
+
+.map {
+  text-align: center;
+}
+
+.trail-title-section {
+  width: 90%;
+  margin: 2em 0em 0em 2em;
 }
 
 .trail-title {
@@ -468,36 +408,123 @@ nav ul {
 
 /* laptop styles */
 @media screen and (min-width: 987px) {
+  /* Hero */
+  .hero-section {
+    display: flex;
+    align-items: flex-end;
+    min-height: 400px;
+  }
+  .hero-text {
+    width: 50%;
+    justify-content: center;
+    align-self: center;
+    padding: 0 1.5em;
+  }
+  .search-section {
+    width: 50%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 0 1.5em;
+    height: 3em;
+  }
+
+  /* Content section */
+
+  .content-section {
+    display: grid;
+    width: 95%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .content-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+  .left {
+    order: -1;
+  }
+  .content-card-info {
+    margin: 3em 0 0 0;
+    padding: 2.5em;
+    width: 50%;
+  }
+
+  /* Trail section */
+
   .trail-section {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5em;
+  }
+
+  .trail-card-section {
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    gap: 1.5em;
   }
   .trail-card {
     display: grid;
-    grid-template-columns: repeat(1.5fr, 0.5fr);
-    gap: 1em;
-    grid-column: 1;
+    grid-template-columns: 1fr;
+    align-items: start;
     grid-template-areas: 
       "trail-info trail-img"
       "trail-content trail-content";
     align-items: center;
+    width: 100%;
+    max-width: 400px;
+    gap: 0.5em;
   }
-  .left-section {
-    display: f
+
+  .trail-title-section {
+    width: 90%;
+    margin: 2em 0em 0em 3em;
   }
+
+  .trail-card:nth-child(1),
+  .trail-card:nth-child(2) {
+    border-bottom: 1px solid #A8A8A8;
+  }
+
+
   .trail-title {
     font-size: 1.25rem;
   }
   .trail-info {
     grid-area: trail-info;
+    width: max-content;
   }
   .trail-img {
     grid-area: trail-img;
+    width: 70%;
+    align-self: end;
+
   }
   .trail-content {
     grid-area: trail-content;
+    margin-bottom: 2em;
   }
   .map {
-    grid-auto-rows: 1fr;
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+
+  /* Resources */
+  .resources-section {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+  }
+
+  /* Footer */
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 2em;
+    padding: 2em;
+  }
+  .copyright {
+    margin-top: 0.5em;
   }
 }
