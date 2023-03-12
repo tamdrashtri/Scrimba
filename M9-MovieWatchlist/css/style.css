@@ -1,0 +1,20 @@
+:root {
+  --ff-primary: 'Poppins', sans-serif;
+
+  --clr-white: #fff;
+  --clr-dark: #141414;
+  --clr-gray: #918E9B;
+}
+
+/* ==================== */
+/*    Typography        */
+/* ==================== */
+
+body {
+  font-family: var(--ff-primary);
+  background-color: #F5F5F5;
+  color: var(--clr-white);
+}
+
+
+
