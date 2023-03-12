@@ -1,5 +1,5 @@
 :root {
-  --ff-primary: 'Inter', sans-serif;
+  --ff-primary: 'Poppins', sans-serif;
 
   --clr-white: #fff;
   --clr-dark: #141414;
@@ -13,9 +13,136 @@
 body {
   font-family: var(--ff-primary);
   background-color: #F5F5F5;
+  color: var(--clr-white);
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+  color: #B7B7B7;
 }
 
 
 /* ==================== */
-/*    Header Section    */
+/*    General Styling    */
 /* ==================== */
+
+.container {
+  max-width: 550px;
+  max-height: 973px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  border: 0.5rem solid #141414;
+  border-radius: 2rem;
+  background: linear-gradient(180deg, #FFFFFF 33.29%, #F7F8FC 100%);
+}
+
+/* ==================== */
+/*    Navbar            */
+/* ==================== */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.prof-icon,
+.chat-icon {
+  width: 34px;
+  height: 34px;
+}
+
+.logo-icon {
+  width: 84px;
+  height: 42px;
+}
+
+/* ==================== */
+/*    Main Section      */
+/* ==================== */
+
+.main-section {
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
+
+.profile-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  color: #fff;
+  width: 100%;
+  margin: 0;
+  padding: 15px;
+  z-index: 1;
+}
+
+.badge {
+  position: absolute;
+  top: 0px;
+  left: 50px;
+  transform: rotate(-45deg);
+}
+
+.nope-badge,
+.like-badge {
+  width: 230px;
+}
+
+.profile-pic {
+  border-radius: 1rem;
+  background-color: linear-gradient(0deg, rgba(0, 0, 0, 0.9) -11.44%, rgba(0, 0, 0, 0) 39.97%);
+}
+
+/* ==================== */
+/*    Button Section    */
+/* ==================== */
+
+.button-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding-bottom: 1em;
+}
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 50%;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  width: 92px;
+  height: 92px;
+  border: none;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px #E9E9EA;
+}
+
+.btn-yes:hover {
+  background: #DBFFF4;
+  box-shadow: 0px 10px 20px #CCF1E6;
+}
+
+.btn-no:hover {
+  background: #FFE7EF;
+  box-shadow: 0px 10px 20px #EDD9DF;
+}
+
+
+

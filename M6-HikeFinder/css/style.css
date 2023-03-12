@@ -123,10 +123,11 @@ header {
   list-style: none;
 }
 
-.menu a:hover,
-.menu a:focus {
+.menu li a:hover,
+.menu li a:focus {
   color: coral;
 }
+
 
 
 #sign-up {
@@ -151,6 +152,22 @@ header {
     border-radius: 0.5rem;
     padding: 1em;
     z-index: 999;
+  }
+
+  .primary-navigation ul li a {
+    color: var(--clr-white);
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  #sign-up,
+  #log-in {
+    background: none;
+    padding: 0.5em 1em;
+    border: #141414 1px solid;
   }
 
   .logo a {
@@ -192,23 +209,60 @@ header {
     Hero Section
    ================= */
 
+
 .hero-section {
-  background-image: linear-gradient(180deg, rgba(35, 35, 35, 0.9) 66.04%, rgba(35, 35, 35, 0) 100%), url(../images/image\ 2.jpg);
-  opacity: 0.8;
+  position: relative;
+  height: 500px;
+  background-image: url('../images/image\ 2.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  background-blend-mode: multiply;
-  padding: 1.5em 0 0.3em 1.5em;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.search-section {
+.hero-section::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-45%, -50%);
+  padding: 10px;
+  z-index: 3;
+}
+
+/* .search-section {
   margin-bottom: 1em;
   margin-top: 2em;
   display: flex;
   padding: 0.5em 0;
   height: 4em;
+  justify-items: flex-start;
+  align-items: flex-end;
+} */
+
+
+.search-section {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  height: 3em;
+  z-index: 3;
 }
 
 button {
@@ -242,11 +296,6 @@ input {
 
 .hero-title {
   width: 80%;
-}
-
-.hero-text {
-  align-self: center;
-  padding: 5em 1em;
 }
 
 .par {
@@ -399,6 +448,7 @@ nav ul {
 
 .trail-content {
   color: #6F6F6F;
+  margin-bottom: 2em;
 }
 
 .review {
@@ -414,11 +464,35 @@ nav ul {
     align-items: flex-end;
     min-height: 400px;
   }
+
+  .hero-section::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Change the alpha value to adjust the darkness of the overlay */
+    z-index: 1;
+  }
+
+  .search-section {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 50px;
+    margin-right: 500px;
+    z-index: 4;
+  }
+
   .hero-text {
     width: 50%;
     justify-content: center;
     align-self: center;
     padding: 0 1.5em;
+    transform: translate(-65%, -60%);
+    z-index: 3;
   }
   .search-section {
     width: 50%;
