@@ -8,9 +8,12 @@ M6 - 🌲 HikeFinder Website: https://scrimba.com/scrim/cBR2mvuW
    - Learning Journal: https://scrimba.com/learn/frontend/solo-project-learning-journal-cNP6Gwc6
 M7 - 🔍 Employee Directory:  https://scrimba.com/scrim/co0584e3281af731b3075f9b0
    - Tindog https://scrimba.com/learn/frontend/solo-project-tindog-co0e64371a0120af20b5f91e9
-M9 -
-      📺 YouTube Channel Search: https://scrimba.com/scrim/cmZ7mMAd
+M9 -  📺 YouTube Channel Search: https://scrimba.com/scrim/cmZ7mMAd
       🤖 Texterly AI: https://scrimba.com/scrim/cVM68rhM 
       Movie Watchlist: https://scrimba.com/learn/frontend/solo-project-movie-watchlist-co0a24985872b20458f37bc22
+      Color Generator: https://scrimba.com/learn/frontend/solo-project-color-scheme-generator-co73343ea8c93c5d396d7ac67
+M11 - Digital Business Card https://scrimba.com/learn/frontend/solo-project-pro-digital-business-card-coce646e88eea46f91af43ca4
+    - Travel Journal https://scrimba.com/learn/frontend/solo-project-pro-travel-journal-co74f46f2b22693c5ea577559 
+    - Quizzical https://scrimba.com/learn/frontend/solo-project-pro-quizzical-co24f49bea8aace7c174082c8
 
 https://different-marmoset-f7b.notion.site/Solo-Projects-Code-Reviews-60e29d0d91204813944075a2db549833

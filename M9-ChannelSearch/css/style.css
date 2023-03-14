@@ -1,0 +1,70 @@
+:root {
+  --ff-primary: 'Inter', sans-serif;
+
+  --clr-white: #fff;
+  --clr-dark: #282828;
+  --clr-gray: #918E9B;
+}
+
+/* ==================== */
+/*    Typography        */
+/* ==================== */
+
+body {
+  font-family: var(--ff-primary);
+  color: var(--clr-dark);
+  font-weight: 600;
+  background-color: #F7F9FB;
+}
+
+.container {
+  max-width: 1440px;
+}
+
+.main-title {
+  font-size: 2rem;
+  color: #1B4965;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.blue {
+  color: #1B4965;
+}
+
+.light-blue {
+  color: #5FA8D3;
+}
+
+input {
+  color: #929292;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+/* ==================== */
+/*    General Styling        */
+/* ==================== */
+
+main {
+  text-align: center;
+}
+
+header,
+.search-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+}
