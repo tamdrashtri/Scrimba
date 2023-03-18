@@ -1,5 +1,5 @@
 // Define API key and channel ID
-const apiKey = 'AIzaSyAMpp5upnOEQ5RdkQuMbEVpO97je-GwWFc';
+const apiKey = 'AIzaSyC6EXvyfaa1bY0b1ppkhgrUrtobbuMiOg0';
 const channelId = 'UCmGSJVG3mCRXVOP4yZrU1Dw';
 
 // Define URL for initial video search

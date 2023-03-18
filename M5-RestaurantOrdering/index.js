@@ -1,9 +1,11 @@
 import { menuArray } from "./data.js";
 
-const menuItems = document.querySelector('.menu-items-container')
-const orderList = document.querySelector('.order-list')
-const modalEl = document.querySelector('.modal')
-const orderTotal = document.querySelector('.order-total')
+const { menuItems, orderList, modalEl, orderTotal } = {
+  menuItems: document.querySelector(".menu-items-container"),
+  orderList: document.querySelector(".order-list"),
+  modalEl: document.querySelector(".modal"),
+  orderTotal: document.querySelector(".order-total"),
+};
 
 
 let orderArray = []
@@ -33,19 +35,19 @@ function render() {
 }
 
 // when add button is clicked, add the name and price of the menuArray item to the order list
-menuItems.addEventListener('click', (e) => {
-  if (e.target.classList.contains('fa-plus')) {
-    const index = e.target.parentElement.dataset.item
+menuItems.addEventListener("click", (e) => {
+  if (e.target.closest(".add-item-container")) {
+    const index = e.target.closest(".add-item-container").dataset.item;
 
-    const itemObj = {name: menuArray[index].name, price: menuArray[index].price}
+    const itemObj = { name: menuArray[index].name, price: menuArray[index].price };
     // add the name and price of this item index to orderArray
-    orderArray.push(itemObj)
+    orderArray.push(itemObj);
 
-    orderTotal.style.display = 'inline'
-    renderOrderList()
-    renderTotal()
+    orderTotal.style.display = "inline";
+    renderOrderList();
+    renderTotal();
   }
-})
+});
 
 function renderTotal() {
   const total = orderArray.reduce((acc, item) => {
@@ -69,14 +71,14 @@ function renderOrderList() {
 }
 
 // remove the order when click remove
-orderList.addEventListener('click', (e) => {
-  if (e.target.classList.contains('remove')) {
-    const index = e.target.dataset.itemlist
-    orderArray.splice(index, 1)
-    renderOrderList()
-    renderTotal()
+orderList.addEventListener("click", (e) => {
+  if (e.target.classList.contains("remove")) {
+    const index = e.target.dataset.itemlist;
+    orderArray.splice(index, 1);
+    renderOrderList();
+    renderTotal();
   }
-})
+});
 
 // once the pay button is clicked, pop up the credit card modal
 document.querySelector('.complete-order').addEventListener('click', () => {

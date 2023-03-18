@@ -1,5 +1,5 @@
 :root {
-  --ff-primary: 'Poppins', sans-serif;
+  --ff-primary: 'Inter', sans-serif;
 
   --clr-white: #fff;
   --clr-dark: #141414;
@@ -16,5 +16,67 @@ body {
   color: var(--clr-white);
 }
 
+.container {
+  max-width: 550px;
+  border: #141414 1px solid;
+  margin: 0 auto;
+}
+
+nav {
+  height: 90px;
+  box-shadow: #918E9B;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#colorpicker {
+  width: 51px;
+  height: 40px;
+  border: 0.5px solid #313131;
+}
+
+#colorscheme {
+  min-width: 250px;
+  border-radius: 6px;
+  height: 40px;
+  padding: 0.5em;
+  background: transparent;
+  border: 1px solid #D1D5DB;
+  color: #374151;
+}
+
+.get-color-btn {
+  padding: 0.5em 1em;
+  border: 1px solid #D1D5DB;
+  border-radius: 6px;
+  height: 40px;
+  color: #374151;
+
+}
+
+.color-section {
+  display: flex;
+  height: 400px;
+  
+}
+
+.color-box {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  background: transparent;
+  cursor: pointer;
+  justify-content: flex-end;
+}
+
+.color-value {
+  color: var(--clr-dark);
+  height: 2.5rem;
+  background-color: var(--clr-white);
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: 0.8rem;
+}
 
 
