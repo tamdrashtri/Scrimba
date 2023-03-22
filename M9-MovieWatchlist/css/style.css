@@ -13,8 +13,147 @@
 body {
   font-family: var(--ff-primary);
   background-color: #F5F5F5;
-  color: var(--clr-white);
 }
+
+.container {
+  max-width: 550px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  padding-bottom: 5em;
+}
+
+header {
+  background-image: url(../hero.png);
+  background-color: rgba(0, 0, 0, 0.735);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  height: 9em;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h1 {
+  color: var(--clr-white);
+  font-weight: bold;
+}
+
+header p a {
+  color: var(--clr-white);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.search-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -1em;
+  height: 2.5em;
+  margin-bottom: 3em;
+}
+
+.fa-magnifying-glass {
+  color: #9CA3AF;
+  padding: 0 0.5em;
+  padding-top: 0.6em;
+  height: 100%;
+  border-left: 1px solid #D1D5DB;
+  border-top: 1px solid #D1D5DB;
+  border-bottom: 1px solid #D1D5DB;
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+  background-color: var(--clr-white);
+}
+
+.search-btn {
+  height: 100%;
+  color: #374151;
+  padding: 0.3em 1.5em;
+  border: 1px solid #D1D5DB;
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+  cursor: pointer;
+}
+
+input {
+  height: 100%;
+  width: 15em;
+  padding: 0.3em 0.5em;
+  border-top: 1px solid #D1D5DB;
+  border-bottom: 1px solid #D1D5DB;
+  border-left: none;
+  border-right: none;
+}
+
+.movies-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.movies-details {
+  padding: 0.5em 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  width: 100%;
+}
+
+.movie-subinfo {
+  display: flex;
+  gap: 1.5em;
+  font-size: 0.75rem;
+  color: #111827;
+}
+
+.fa-circle-plus {
+  cursor: pointer;
+}
+
+.add-watchlist-btn {
+  text-decoration: none;
+  color: var(--clr-dark);
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.movie-title {
+  color: 000;
+}
+
+.movies-section--title {
+  display: flex;
+  gap: 1em;
+}
+
+.ratings {
+  display: flex;
+  gap: 0.5em;
+  flex-direction: row;
+  align-items: center;
+  color: #111827;
+}
+
+.movie-title {
+  font-size: 1.25rem;
+}
+
+.description {
+  color: #6B7280;
+}
+
+
 
 
 
