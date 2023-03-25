@@ -1,0 +1,10 @@
+footer {
+  background-color: #D5D4D8;
+  padding: 1.5em 1em;
+  margin-top: 3em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+
+}
+
