@@ -10,11 +10,12 @@ const StyledButton = styled.button`
     margin: 2em 0;
     display: block;
     margin-inline: auto;
+    cursor: pointer;
 `
 
-const Button = ({text}) => {
+const Button = ({text, onClick }) => {
     return (
-        <StyledButton>{text}</StyledButton>
+        <StyledButton onClick={onClick}>{text}</StyledButton>
     )
 }
 
